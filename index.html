@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Real-World Functions | MHF4U Culminating Task</title>
+<meta name="description" content="MHF4U Advanced Functions culminating task: nine real-world photos modelled with functions in Desmos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="nav"><div class="wrap">
+<a class="brand" href="#top">MHF4U · Real-World Functions</a>
+<ul><li><a class="pill" href="#overview">Overview</a></li><li><a class="pill" href="#index">Functions</a></li><li><a class="pill" href="#group">Group</a></li></ul>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<div>
+<h1>Functions<br>in the<br>real world!</h1>
+<p class="sub">Nine photos around Sunway, each modelled with a function in Desmos.</p>
+<div class="btns">
+<a class="pill" href="#overview">About the project</a>
+<a class="pill" href="#index">Function index</a>
+<a class="pill" href="#group">Meet the group</a>
+</div></div>
+<div class="shapes" aria-hidden="true"><div class="a"></div><div class="b c-red"></div><div class="c"></div><div class="d"></div><div class="e"></div><div class="f"></div></div>
+</div></header>
+
+<section class="band yellow" id="overview"><div class="wrap">
+<h2>About the project</h2>
+<p>For our MHF4U culminating task we photographed ourselves around Sunway and then asked a simple question: which function from the course would trace the shape in this picture? Each photo was placed on a coordinate grid in Desmos, matched to a parent function, and transformed using the parameters a, k, d and c until the curve sat on the structure in the picture.</p>
+<p>Every function below shows the original photo, the Desmos overlay, the parent function and final equation, and the domain and range, written in set notation with interval notation beside it. Where we solved for parameters algebraically from points on the photo, the derivation is included too. Each function ends with two short write-ups: how the parameters transform the parent, and where the real object stops behaving like the mathematical model.</p>
+</div></section>
+
+<section class="index" id="index"><div class="wrap">
+<h2>Function index</h2>
+<p class="lead">Select a card to jump to that function.</p>
+<div class="cards">
+<a class="card" href="#function-1">
+<div class="top c-yellow"><span class="num">1</span><span class="type">Reciprocal</span></div>
+<div class="body"><p class="who">Edward</p><p class="eq">\(y=\dfrac{0.2}{x+2}\)</p></div></a><a class="card" href="#function-2">
+<div class="top c-blue"><span class="num">2</span><span class="type">Rational</span></div>
+<div class="body"><p class="who">Jean</p><p class="eq">\(y=\dfrac{1}{6x^{2}}-1\)</p></div></a><a class="card" href="#function-3">
+<div class="top c-green"><span class="num">3</span><span class="type">Polynomial</span></div>
+<div class="body"><p class="who">Jean</p><p class="eq">\(y=x^{3}-2\)</p></div></a><a class="card" href="#function-4">
+<div class="top c-red"><span class="num">4</span><span class="type">Trigonometric (with asymptotes)</span></div>
+<div class="body"><p class="who">Edward</p><p class="eq">\(y=-\tan(1.5x)\)</p></div></a><a class="card" href="#function-5">
+<div class="top c-yellow"><span class="num">5</span><span class="type">Sinusoidal</span></div>
+<div class="body"><p class="who">Jean, Matthew, Edward</p><p class="eq">\(y=0.5\sin\!\left(\tfrac{\pi}{2}(x+1)\right)\)</p></div></a><a class="card" href="#function-6">
+<div class="top c-blue"><span class="num">6</span><span class="type">Exponential</span></div>
+<div class="body"><p class="who">Matthew, Edward</p><p class="eq">\(y=3^{x/5}-2\)</p></div></a><a class="card" href="#function-7">
+<div class="top c-green"><span class="num">7</span><span class="type">Logarithmic</span></div>
+<div class="body"><p class="who">Matthew, Edward</p><p class="eq">\(y=\log(x+1)-0.8\)</p></div></a><a class="card" href="#function-8">
+<div class="top c-red"><span class="num">8</span><span class="type">Linear</span></div>
+<div class="body"><p class="who">Matthew</p><p class="eq">\(y=0.6375x+0.275\)</p></div></a><a class="card" href="#function-9">
+<div class="top c-yellow"><span class="num">9</span><span class="type">Absolute Value</span></div>
+<div class="body"><p class="who">Jean</p><p class="eq">\(y=|x|-4\)</p></div></a>
+</div></div></section>
+
+
+<section class="fn" id="function-1">
+<div class="fn-head c-yellow"><div class="wrap"><div><p class="kicker">Function 1</p><h2>Reciprocal</h2></div><div><span class="chip">Edward</span></div></div></div>
+<div class="fn-body"><div class="wrap">
+<div class="pair">
+<figure><img src="images/f1-photo.jpg" alt="Edward standing beside a railing on a covered walkway, with a street and buildings behind him" loading="lazy"><figcaption>Original photo</figcaption></figure>
+<figure><img src="images/f1-desmos.jpg" alt="Desmos graph with the photo placed on the grid and green asymptote lines through it" loading="lazy"><figcaption>Desmos graph overlay</figcaption></figure>
+</div>
+<div class="spec">
+<div class="box"><h3>Parent function</h3><p>$$ f(x)=\dfrac{1}{x} $$</p><h3 style="margin-top:1rem">Transformed form</h3><p>$$ y=\dfrac{a}{k(x-d)}+c $$</p></div>
+<div class="box"><h3>Final equation</h3><p>$$ y=\dfrac{0.2}{x+2} $$</p><p>$$ a=0.2,\; k=1,\; d=-2,\; c=0 $$</p></div>
+<div class="box"><h3>Domain</h3><p>$$ D=\,\{x\in\mathbb{R}\mid x\neq -2\} $$</p><p class='note'>Interval notation: \((-\infty,-2)\cup(-2,\infty)\)</p></div>
+<div class="box"><h3>Range</h3><p>$$ R=\,\{y\in\mathbb{R}\mid y\neq 0\} $$</p><p class='note'>Interval notation: \((-\infty,0)\cup(0,\infty)\)</p></div>
+</div>
+<div class="deriv"><div class="box"><h3>Algebraic derivation</h3><p>We started from the general reciprocal form and read off the asymptotes first, because they fix d and c before any algebra on a point is needed. The vertical asymptote sits at \(x=-2\) and the horizontal one on the x-axis, so \(d=-2\), \(c=0\), and we kept \(k=1.\) That left only a to find, and one point from the photo was enough.</p></div>
+<div class="deriv-grid" style="margin-top:1.2rem"><div class="box"><p>$$ \begin{aligned}
+y&=\frac{a}{k(x-d)}+c \quad\text{with } k=1,\ d=-2,\ c=0 \;\Rightarrow\; y=\frac{a}{x+2}\\[4pt]
+\text{Point } (-1.6,\,0.5):\quad 0.5&=\frac{a}{-1.6+2}\\[4pt]
+0.5&=\frac{a}{0.4}\\[4pt]
+a&=0.5(0.4)=0.2\\[4pt]
+y&=\frac{0.2}{x+2}
+\end{aligned} $$</p><p>Substituting the point is what turns the placement of the asymptotes into an actual curve. The asymptotes tell us where the branches live, and the point tells us how tightly they bend toward them. We then checked the equation against the photo in Desmos.</p></div>
+<figure><img src="images/f1-derivation.jpg" alt="Handwritten working solving for a using the point \((-1.6,\,0.5)\)" loading="lazy"><figcaption>Handwritten working</figcaption></figure></div></div>
+<div class="text">
+<h3>Transformations and parameters</h3><p>The parent function \(1/x\) has a vertical asymptote at \(x=0\), a horizontal asymptote at \(y=0\), and two branches that sit in opposite quadrants, so the first job was to decide where those two lines belong in the photo. Our horizontal shift of \(d=-2\) slides the vertical asymptote from the y-axis to \(x=-2\), which is where the vertical posts of the walkway line up, and \(c=0\) leaves the horizontal asymptote on the x-axis along the railing. The vertical compression \(a=0.2\) pulls both branches in toward the asymptotes so the curve hugs the structure instead of flaring across the whole picture, and \(k=1\) means we did not need any horizontal stretch. Because a is positive, the branches stay in the same quadrant arrangement as the parent, just shifted two units left.</p>
+<h3>Physical bounds and model breakdown</h3><p>Only the part of the graph that falls inside the photo frame is meaningful, so the realistic domain is the visible stretch of walkway on either side of \(x=-2\), and the realistic range is capped by the top and bottom edges of the picture rather than extending forever in both directions. The model breaks down mostly because an asymptote is a line with no thickness, while the posts and railing are solid objects with real width, so the curve never actually has to avoid anything in the way the structure does. Perspective also makes the posts and railing look different in size across the frame, which an exact equation cannot reflect. Finally, the branches of \(1/x\) run off to infinity, whereas the walkway simply ends at its edges.</p>
+</div>
+<p><a class="pill ghost" href="#index">Back to index</a></p>
+</div></div></section>
+<section class="fn" id="function-2">
+<div class="fn-head c-blue"><div class="wrap"><div><p class="kicker">Function 2</p><h2>Rational</h2></div><div><span class="chip">Jean</span></div></div></div>
+<div class="fn-body"><div class="wrap">
+<div class="pair">
+<figure><img src="images/f2-photo.jpg" alt="Jean sitting between a red chair and a blue chair in front of a black and white patterned wall" loading="lazy"><figcaption>Original photo</figcaption></figure>
+<figure><img src="images/f2-desmos.jpg" alt="Desmos graph with the chair photo and blue asymptote lines through it" loading="lazy"><figcaption>Desmos graph overlay</figcaption></figure>
+</div>
+<div class="spec">
+<div class="box"><h3>Parent function</h3><p>$$ f(x)=\dfrac{1}{x^{2}} $$</p><p class='note'>A member of the rational family \(f(x)=\dfrac{ax+b}{cx+d}\).</p><h3 style="margin-top:1rem">Transformed form</h3><p>$$ y=\dfrac{a}{\left(k(x-d)\right)^{2}}+c $$</p></div>
+<div class="box"><h3>Final equation</h3><p>$$ y=\dfrac{1}{6x^{2}}-1 $$</p><p>$$ a=\tfrac{1}{6},\; k=1,\; d=0,\; c=-1 $$</p></div>
+<div class="box"><h3>Domain</h3><p>$$ D=\,\{x\in\mathbb{R}\mid x\neq 0\} $$</p><p class='note'>Interval notation: \((-\infty,0)\cup(0,\infty)\)</p></div>
+<div class="box"><h3>Range</h3><p>$$ R=\,\{y\in\mathbb{R}\mid y>-1\} $$</p><p class='note'>Interval notation: \((-1,\infty)\)</p></div>
+</div>
+
+<div class="text">
+<h3>Transformations and parameters</h3><p>This one is built from \(\(1/x\)^{2}\), a rational function whose branches both stay above the x-axis and rise steeply on either side of the vertical asymptote at \(x=0.\) We left \(d=0\) because the gap between the two chairs sits right on the y-axis, so the asymptote already falls where we wanted it. The vertical shift \(c=-1\) drops the whole graph one unit, which moves the horizontal asymptote from \(y=0\) down to \(y=-1\) and brings it down near the base of the chairs. The stretch factor \(a=1/6\) flattens the parent a lot, because \(\(1/x\)^{2}\) shoots up too fast near the asymptote to follow the chairs, and \(k=1\) keeps the width unchanged. With these values the two branches act like a left chair and a right chair, mirrored across the y-axis.</p>
+<h3>Physical bounds and model breakdown</h3><p>The useful domain is just the horizontal span of the photo with \(x=0\) excluded, and the useful range starts at the floor level \(y=-1\) and stops at the top of the frame. The real chairs break the model in several ways: they have legs that touch the ground at a finite height instead of approaching a horizontal line forever, and the gap between them has a real width instead of the zero-width asymptote. The chairs are also three-dimensional and photographed at a slight angle, so they are not perfect mirror images of each other, while the function is exactly symmetric. And of course, a person sitting in the gap is not something the equation can represent at all.</p>
+</div>
+<p><a class="pill ghost" href="#index">Back to index</a></p>
+</div></div></section>
+<section class="fn" id="function-3">
+<div class="fn-head c-green"><div class="wrap"><div><p class="kicker">Function 3</p><h2>Polynomial</h2></div><div><span class="chip">Jean</span></div></div></div>
+<div class="fn-body"><div class="wrap">
+<div class="pair">
+<figure><img src="images/f3-photo.jpg" alt="Jean standing on an escalator with a city skyline illustration along its side" loading="lazy"><figcaption>Original photo</figcaption></figure>
+<figure><img src="images/f3-desmos.jpg" alt="Desmos graph with the escalator photo and a purple cubic curve crossing it" loading="lazy"><figcaption>Desmos graph overlay</figcaption></figure>
+</div>
+<div class="spec">
+<div class="box"><h3>Parent function</h3><p>$$ f(x)=x^{n}\ \ (n=3) $$</p><h3 style="margin-top:1rem">Transformed form</h3><p>$$ y=a\left(k(x-d)\right)^{3}+c $$</p></div>
+<div class="box"><h3>Final equation</h3><p>$$ y=x^{3}-2 $$</p><p>$$ a=1,\; k=1,\; d=0,\; c=-2 $$</p></div>
+<div class="box"><h3>Domain</h3><p>$$ D=\,\{x\in\mathbb{R}\} $$</p><p class='note'>Interval notation: \((-\infty,\infty)\)</p></div>
+<div class="box"><h3>Range</h3><p>$$ R=\,\{y\in\mathbb{R}\} $$</p><p class='note'>Interval notation: \((-\infty,\infty)\)</p></div>
+</div>
+
+<div class="text">
+<h3>Transformations and parameters</h3><p>For the escalator we used an odd-degree polynomial, the cubic \(y=x^{3}\), which flattens out through the origin and then climbs steeply on one side while dropping steeply on the other. Its steady climb through the middle matched the rise of the escalator, so very little transforming was needed. We kept \(a=1\), \(k=1\) and \(d=0\), meaning no stretch, compression, reflection or horizontal shift, and used only \(c=-2\) to move the point of inflection two units below the origin so the curve passes through the middle of the photo at the right height. Since the cubic is odd, the graph is symmetric about its inflection point, which is part of why it follows the rise and fall of the escalator so naturally.</p>
+<h3>Physical bounds and model breakdown</h3><p>The photo only shows a short stretch of the escalator, so the realistic domain is a small interval around the inflection point instead of all real numbers, and the realistic range is limited by the top and bottom of the frame. A cubic keeps getting steeper forever, but an escalator is a straight ramp with a fixed slope that ends at a landing at each end, so the model can only match it over a short window and starts to drift away from the real steps on either side. The escalator also has thickness, rails and side panels, and because the photo is tilted, the angle of the escalator we see is partly an effect of the camera rather than the true slope.</p>
+</div>
+<p><a class="pill ghost" href="#index">Back to index</a></p>
+</div></div></section>
+<section class="fn" id="function-4">
+<div class="fn-head c-red"><div class="wrap"><div><p class="kicker">Function 4</p><h2>Trigonometric (with asymptotes)</h2></div><div><span class="chip">Edward</span></div></div></div>
+<div class="fn-body"><div class="wrap">
+<div class="pair">
+<figure><img src="images/f4-photo.jpg" alt="Edward looking over a white stone balustrade with hedges and trees behind it" loading="lazy"><figcaption>Original photo</figcaption></figure>
+<figure><img src="images/f4-desmos.jpg" alt="Desmos graph with the balustrade photo and repeating red tangent branches over it" loading="lazy"><figcaption>Desmos graph overlay</figcaption></figure>
+</div>
+<div class="spec">
+<div class="box"><h3>Parent function</h3><p>$$ f(x)=\tan(x) $$</p><h3 style="margin-top:1rem">Transformed form</h3><p>$$ y=a\tan\!\left(k(x-d)\right)+c $$</p></div>
+<div class="box"><h3>Final equation</h3><p>$$ y=-\tan(1.5x) $$</p><p>$$ a=-1,\; k=1.5,\; d=0,\; c=0 $$</p></div>
+<div class="box"><h3>Domain</h3><p>$$ D=\,\left\{x\in\mathbb{R}\;\middle|\; x\neq \tfrac{\pi}{3}+\tfrac{2\pi}{3}n,\ n\in\mathbb{Z}\right\} $$</p></div>
+<div class="box"><h3>Range</h3><p>$$ R=\,\{y\in\mathbb{R}\} $$</p><p class='note'>Interval notation: \((-\infty,\infty)\)</p></div>
+</div>
+
+<div class="text">
+<h3>Transformations and parameters</h3><p>The parent \(\tan(x)\) has a period of \(\pi\) and vertical asymptotes at \(x=\pi/2+n\pi\), with every branch rising from left to right. The balusters in the photo are close together, so the main change was the horizontal compression \(k=1.5\), which shrinks the period to \(2\pi/3\), about 2.1 units, and moves the asymptotes to \(x=\pi/3+2\pi n/3\). That spacing is what lets the asymptotes sit along the balusters. We also used \(a=-1\) to reflect the graph over the x-axis, so each branch now falls from left to right, which fixed the direction the branches curve between the balusters. There was no need for a horizontal shift or vertical shift, so \(d=0\) and \(c=0.\)</p>
+<h3>Physical bounds and model breakdown</h3><p>Inside the photo, the meaningful domain is the stretch of balustrade we can see, with the asymptote values left out, and the meaningful range is limited by the top rail and the base of the railing. The real structure breaks the model in a few obvious ways. Tangent branches go to infinity, but the balusters stop at the top rail and the bottom ledge. Each baluster is a solid shape that bulges in the middle, not a zero-width asymptote, and the real spacing between them is not perfectly even once perspective is taken into account. The branches also pass through the same point on every period, whereas the balusters are only roughly evenly sized.</p>
+</div>
+<p><a class="pill ghost" href="#index">Back to index</a></p>
+</div></div></section>
+<section class="fn" id="function-5">
+<div class="fn-head c-yellow"><div class="wrap"><div><p class="kicker">Function 5</p><h2>Sinusoidal</h2></div><div><span class="chip">Jean</span><span class="chip">Matthew</span><span class="chip">Edward</span></div></div></div>
+<div class="fn-body"><div class="wrap">
+<div class="pair">
+<figure><img src="images/f5-photo.jpg" alt="Top-down photo of three pairs of feet standing on yellow hexagonal paving tiles" loading="lazy"><figcaption>Original photo</figcaption></figure>
+<figure><img src="images/f5-desmos.jpg" alt="Desmos graph with the paving photo and a blue wave running along a row of tile edges" loading="lazy"><figcaption>Desmos graph overlay</figcaption></figure>
+</div>
+<div class="spec">
+<div class="box"><h3>Parent function</h3><p>$$ f(x)=\sin(x) $$</p><h3 style="margin-top:1rem">Transformed form</h3><p>$$ y=a\sin\!\left(k(x-d)\right)+c $$</p></div>
+<div class="box"><h3>Final equation</h3><p>$$ y=0.5\sin\!\left(\tfrac{\pi}{2}(x+1)\right) $$</p><p>$$ a=0.5,\; k=\tfrac{\pi}{2},\; d=-1,\; c=0 $$</p></div>
+<div class="box"><h3>Domain</h3><p>$$ D=\,\{x\in\mathbb{R}\} $$</p><p class='note'>Interval notation: \((-\infty,\infty)\)</p></div>
+<div class="box"><h3>Range</h3><p>$$ R=\,\{y\in\mathbb{R}\mid -0.5\le y\le 0.5\} $$</p><p class='note'>Interval notation: \([-0.5,\,0.5]\)</p></div>
+</div>
+
+<div class="text">
+<h3>Transformations and parameters</h3><p>The parent \(\sin(x)\) has an amplitude of 1 and a period of \(2\pi\), which is far too tall and too long for the zigzag along the edge of the tiles. We used \(a=0.5\) to halve the amplitude so the wave only reaches half a unit above and below the axis, and \(k=\pi/2\) to change the period to \(2\pi\div(\pi/2)=4\), which matches the repeat of the tile pattern. The shift \(d=-1\) moves the wave one unit to the left, which puts a peak on the y-axis and lines the pattern up with the tile edge, and \(c=0\) keeps the midline on the x-axis. In short, each parameter was chosen from something we could see in the pattern instead of dragging a slider until it looked right.</p>
+<h3>Physical bounds and model breakdown</h3><p>The photo only shows a limited row of tiles, so while the function itself is defined for every real x, the real pattern only exists across the width of the picture, and the physical range is the narrow band between the highest and lowest tile corners, which is exactly \([-0.5,\,0.5]\). The biggest mismatch is that the tile edge is made of straight segments that form a sharp zigzag, whereas a sine curve is smooth, so the wave overshoots the corners and rounds off the points. The tiles are also slightly uneven and rotated, since the photo was taken by hand from above, so the repeat is not perfectly periodic the way the function is.</p>
+</div>
+<p><a class="pill ghost" href="#index">Back to index</a></p>
+</div></div></section>
+<section class="fn" id="function-6">
+<div class="fn-head c-blue"><div class="wrap"><div><p class="kicker">Function 6</p><h2>Exponential</h2></div><div><span class="chip">Matthew</span><span class="chip">Edward</span></div></div></div>
+<div class="fn-body"><div class="wrap">
+<div class="pair">
+<figure><img src="images/f6-photo.jpg" alt="Matthew and Edward standing next to an escalator decorated with Sunway College panels and Malaysian flags" loading="lazy"><figcaption>Original photo</figcaption></figure>
+<figure><img src="images/f6-desmos.jpg" alt="Desmos graph with the escalator photo and a black exponential curve rising to the right" loading="lazy"><figcaption>Desmos graph overlay</figcaption></figure>
+</div>
+<div class="spec">
+<div class="box"><h3>Parent function</h3><p>$$ f(x)=b^{x} $$</p><h3 style="margin-top:1rem">Transformed form</h3><p>$$ y=a\cdot b^{\,k(x-d)}+c $$</p></div>
+<div class="box"><h3>Final equation</h3><p>$$ y=3^{x/5}-2 $$</p><p>$$ a=1,\; k=\tfrac{1}{5},\; d=0,\; c=-2 $$</p></div>
+<div class="box"><h3>Domain</h3><p>$$ D=\,\{x\in\mathbb{R}\} $$</p><p class='note'>Interval notation: \((-\infty,\infty)\)</p></div>
+<div class="box"><h3>Range</h3><p>$$ R=\,\{y\in\mathbb{R}\mid y>-2\} $$</p><p class='note'>Interval notation: \((-2,\infty)\)</p></div>
+</div>
+<div class="deriv"><div class="box"><h3>Algebraic derivation</h3><p>Here we chose the base \(b=3\) and used the horizontal asymptote to set c, then used two points from the photo to solve for the two remaining unknowns. The asymptote at \(y=-2\) gives \(c=-2\), and with no horizontal shift \(d=0\), so the equation becomes \(y=a\cdot 3^{kx}-2\).</p></div>
+<div class="deriv-grid" style="margin-top:1.2rem"><div class="box"><p>$$ \begin{aligned}
+y&=a\cdot 3^{k(x-d)}+c \quad\text{with } d=0,\ c=-2 \;\Rightarrow\; y=a\cdot 3^{kx}-2\\[4pt]
+\text{Point } (0,-1):\quad -1&=a\cdot 3^{k(0)}-2\\
+-1&=a-2\\
+a&=1\\[6pt]
+\text{Point } (5,1):\quad 1&=1\cdot 3^{5k}-2\\
+3&=3^{5k}\\
+1&=5k\\
+k&=\tfrac{1}{5}\\[6pt]
+y&=3^{x/5}-2
+\end{aligned} $$</p><p>Using the point on the y-axis first was a deliberate choice, since \(x=0\) makes the exponent vanish and isolates a immediately. Once a was known, the second point gave an equation where both sides could be written as powers of 3, so the exponents could be compared directly to get k.</p></div>
+<figure><img src="images/f6-derivation.jpg" alt="Handwritten working solving for a and k using the points \((0,\,-1)\) and \((5,\,1)\)" loading="lazy"><figcaption>Handwritten working</figcaption></figure></div></div>
+<div class="text">
+<h3>Transformations and parameters</h3><p>The parent \(b^{x}\) is always positive, passes through \((0,\,1)\), has a horizontal asymptote at \(y=0\) and grows faster and faster to the right. To fit it to the escalator we kept \(b=3\) but changed three things. The vertical shift \(c=-2\) moves the asymptote down to \(y=-2\) and the y-intercept to \((0,\,-1)\), which is where the curve meets the photo. The horizontal stretch \(k=1/5\) makes the growth much gentler, since otherwise \(3^{x}\) would shoot up far too quickly for the gradual rise of the escalator, and \(a=1\) told us that no vertical stretch was necessary. The algebraic derivation above is where those values came from, and Desmos was only used afterwards to confirm that they sat properly on the photo.</p>
+<h3>Physical bounds and model breakdown</h3><p>Within the photo, the realistic domain is just the visible length of the escalator, and the realistic range runs from the floor level up to the top of the frame, so only a small piece of the full graph is physically meaningful. The mismatch is that an exponential curve gets steeper and steeper, whereas an escalator is a straight ramp with a constant slope that stops at the top landing. The curve therefore only follows the escalator over a short window and pulls away from it beyond that. The horizontal asymptote at \(y=-2\) also does not correspond to anything solid in the picture, and the real escalator has handrails, thickness and side panels that a one-line curve cannot represent.</p>
+</div>
+<p><a class="pill ghost" href="#index">Back to index</a></p>
+</div></div></section>
+<section class="fn" id="function-7">
+<div class="fn-head c-green"><div class="wrap"><div><p class="kicker">Function 7</p><h2>Logarithmic</h2></div><div><span class="chip">Matthew</span><span class="chip">Edward</span></div></div></div>
+<div class="fn-body"><div class="wrap">
+<div class="pair">
+<figure><img src="images/f7-photo.jpg" alt="Matthew and Edward crouching and pointing in a car park beside a yellow curved turning arrow painted on the ground" loading="lazy"><figcaption>Original photo</figcaption></figure>
+<figure><img src="images/f7-desmos.jpg" alt="Desmos graph with the car park photo and a black logarithmic curve following the arrow" loading="lazy"><figcaption>Desmos graph overlay</figcaption></figure>
+</div>
+<div class="spec">
+<div class="box"><h3>Parent function</h3><p>$$ f(x)=\log_{b}(x) $$</p><p class='note'>Logarithm with base 10, the Desmos default for log.</p><h3 style="margin-top:1rem">Transformed form</h3><p>$$ y=a\log\!\left(k(x-d)\right)+c $$</p></div>
+<div class="box"><h3>Final equation</h3><p>$$ y=\log(x+1)-0.8 $$</p><p>$$ a=1,\; k=1,\; d=-1,\; c=-0.8 $$</p></div>
+<div class="box"><h3>Domain</h3><p>$$ D=\,\{x\in\mathbb{R}\mid x>-1\} $$</p><p class='note'>Interval notation: \((-1,\infty)\)</p></div>
+<div class="box"><h3>Range</h3><p>$$ R=\,\{y\in\mathbb{R}\} $$</p><p class='note'>Interval notation: \((-\infty,\infty)\)</p></div>
+</div>
+
+<div class="text">
+<h3>Transformations and parameters</h3><p>The parent logarithm has a vertical asymptote at \(x=0\), passes through \((1,\,0)\) and rises quickly at first and then flattens out, which is the shape of the yellow arrow on the ground as it goes up and bends away to the right. The horizontal shift \(d=-1\) moves the asymptote one unit left, so the steep part of the curve starts at \(x=-1\) and lines up with the beginning of the arrow, and the vertical shift \(c=-0.8\) lowers the whole graph so that it passes through the arrow at the right height. We did not need a stretch or a reflection, so \(a=1\) and \(k=1.\) Moving the asymptote was the key step, since it controls where the curve begins.</p>
+<h3>Physical bounds and model breakdown</h3><p>The domain is naturally restricted to x &gt; −1, which suits the photo well because the arrow starts at a definite point on the ground. The useful range is limited by the top and bottom of the frame, even though the function itself is unbounded. The arrow breaks the model in a few ways: it is painted with a real width instead of being a thin curve, it has an arrowhead at the end where a logarithm would just continue upward without stopping, and the actual path turns in a way that is only roughly logarithmic. Perspective also stretches the arrow in the photo, and the curve we drew assumes a flat picture.</p>
+</div>
+<p><a class="pill ghost" href="#index">Back to index</a></p>
+</div></div></section>
+<section class="fn" id="function-8">
+<div class="fn-head c-red"><div class="wrap"><div><p class="kicker">Function 8</p><h2>Linear</h2></div><div><span class="chip">Matthew</span></div></div></div>
+<div class="fn-body"><div class="wrap">
+<div class="pair">
+<figure><img src="images/f8-photo.jpg" alt="Matthew sitting on concrete stairs next to a metal handrail" loading="lazy"><figcaption>Original photo</figcaption></figure>
+<figure><img src="images/f8-desmos.jpg" alt="Desmos graph with the staircase photo and a blue straight line running along the handrail" loading="lazy"><figcaption>Desmos graph overlay</figcaption></figure>
+</div>
+<div class="spec">
+<div class="box"><h3>Parent function</h3><p>$$ f(x)=x $$</p><h3 style="margin-top:1rem">Transformed form</h3><p>$$ y=a\,k(x-d)+c $$</p></div>
+<div class="box"><h3>Final equation</h3><p>$$ y=0.6375x+0.275 $$</p><p>$$ a=0.6375,\; k=1,\; d=0,\; c=0.275 $$</p></div>
+<div class="box"><h3>Domain</h3><p>$$ D=\,\{x\in\mathbb{R}\} $$</p><p class='note'>Interval notation: \((-\infty,\infty)\)</p></div>
+<div class="box"><h3>Range</h3><p>$$ R=\,\{y\in\mathbb{R}\} $$</p><p class='note'>Interval notation: \((-\infty,\infty)\)</p></div>
+</div>
+<div class="deriv"><div class="box"><h3>Algebraic derivation</h3><p>For the linear function we used two points from the photo, one on each side of the y-axis, found the slope between them, and then used one of the points to find the y-intercept.</p></div>
+<div class="deriv-grid" style="margin-top:1.2rem"><div class="box"><p>$$ \begin{aligned}
+\text{Points: } (2,\,1.55)\ \text{and}\ (-2,\,-1)&\\[4pt]
+m&=\frac{y_2-y_1}{x_2-x_1}=\frac{-1-1.55}{-2-2}\\[4pt]
+&=\frac{-2.55}{-4}=0.6375\\[8pt]
+\text{Using } (-2,-1):\quad -1&=0.6375(-2)+c\\
+-1&=-1.275+c\\
+c&=0.275\\[8pt]
+y&=0.6375x+0.275
+\end{aligned} $$</p><p>The slope tells us how steep the staircase is, and the intercept tells us where the line crosses the y-axis. We matched the numbers to the parameters of the transformed parent: the slope is the vertical stretch a (with \(k=1\)), and the intercept is the vertical shift c.</p></div>
+<figure><img src="images/f8-derivation.jpg" alt="Handwritten working finding the slope and y-intercept from two points" loading="lazy"><figcaption>Handwritten working</figcaption></figure></div></div>
+<div class="text">
+<h3>Transformations and parameters</h3><p>The parent \(f(x)=x\) is a straight line through the origin with a slope of 1, and the handrail on the staircase is clearly less steep than that. The vertical stretch \(a=0.6375\) is the slope we calculated from the two points, which compresses the parent so that for every two units we move right the line only rises about 1.3 units. The vertical shift \(c=0.275\) moves the line up so it crosses the y-axis at the right place, and since \(d=0\) and \(k=1\) there was no horizontal shift or stretch needed. A positive a keeps the line rising to the right, which matches how the stairs and the rail climb in the photo.</p>
+<h3>Physical bounds and model breakdown</h3><p>The realistic domain is the stretch of the staircase and handrail that appears in the photo, and the realistic range is the height range of the visible steps, not every real number. A line goes on forever in both directions, but the rail has a start and an end, and the stairs eventually end. The steps themselves are also discrete, so the real shape is a staircase pattern, and the line is only a smooth average of it. The handrail has thickness, and perspective from the camera makes the slope look different than it would from straight on, so the equation reflects the picture rather than the true angle of the stairs.</p>
+</div>
+<p><a class="pill ghost" href="#index">Back to index</a></p>
+</div></div></section>
+<section class="fn" id="function-9">
+<div class="fn-head c-yellow"><div class="wrap"><div><p class="kicker">Function 9</p><h2>Absolute Value</h2></div><div><span class="chip">Jean</span></div></div></div>
+<div class="fn-body"><div class="wrap">
+<div class="pair">
+<figure><img src="images/f9-photo.jpg" alt="Jean standing behind a glass door decorated with large orange and blue triangles" loading="lazy"><figcaption>Original photo</figcaption></figure>
+<figure><img src="images/f9-desmos.jpg" alt="Desmos graph with the glass door photo and a green V-shaped line along the edges of the triangles" loading="lazy"><figcaption>Desmos graph overlay</figcaption></figure>
+</div>
+<div class="spec">
+<div class="box"><h3>Parent function</h3><p>$$ f(x)=|x| $$</p><h3 style="margin-top:1rem">Transformed form</h3><p>$$ y=a\,\left|k(x-d)\right|+c $$</p></div>
+<div class="box"><h3>Final equation</h3><p>$$ y=|x|-4 $$</p><p>$$ a=1,\; k=1,\; d=0,\; c=-4 $$</p></div>
+<div class="box"><h3>Domain</h3><p>$$ D=\,\{x\in\mathbb{R}\} $$</p><p class='note'>Interval notation: \((-\infty,\infty)\)</p></div>
+<div class="box"><h3>Range</h3><p>$$ R=\,\{y\in\mathbb{R}\mid y\ge -4\} $$</p><p class='note'>Interval notation: \([-4,\infty)\)</p></div>
+</div>
+
+<div class="text">
+<h3>Transformations and parameters</h3><p>The parent \(|x|\) forms a V with its vertex at the origin and arms of slope +1 and −1, which is almost exactly the angle at which the orange and blue triangles on the glass door meet. Because the angle already matched, \(a=1\) and \(k=1\), so there was no need to stretch or compress anything. The only transformation we needed was the vertical shift \(c=-4\), which drops the vertex from the origin to \((0,\,-4)\) where the triangles meet at the bottom of the door. We left \(d=0\) since the point of the V sits directly on the y-axis, in line with the middle of the door, and the graph stays symmetric about that axis.</p>
+<h3>Physical bounds and model breakdown</h3><p>The physical domain is the width of the door as seen in the photo, and the physical range starts at the vertex \(y=-4\) and ends at the top of the glass. The mathematical V has no thickness and extends forever, but the edges of the coloured triangles are finite, and the door has a frame, a handle and a bottom edge that cut the pattern off. The slopes of the arms are also not exactly ±1 in the photo, because the camera is not perfectly square to the door, and the glass reflects the room behind it, which makes the real edges harder to trace.</p>
+</div>
+<p><a class="pill ghost" href="#index">Back to index</a></p>
+</div></div></section>
+
+<section class="band blue" id="group" style="border-top:3px solid #111"><div class="wrap">
+<h2>The group</h2>
+<p>Each function was modelled by the member or members listed on its page, and the sinusoidal, exponential and logarithmic functions were shared between more than one of us.</p>
+<div class="members"><div class="member"><h3>Edward</h3><p>Functions 1, 4, 5, 6, 7</p></div><div class="member"><h3>Jean</h3><p>Functions 2, 3, 5, 9</p></div><div class="member"><h3>Matthew</h3><p>Functions 5, 6, 7, 8</p></div></div>
+</div></section>
+
+<footer><div class="wrap"><span>MHF4U Advanced Functions · Real-World Functions Culminating Task</span><a href="#top">Back to top</a></div></footer>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+<script>
+window.addEventListener('load',function(){
+  if(window.renderMathInElement){
+    renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\(',right:'\\)',display:false}],throwOnError:false});
+  }
+});
+</script>
+</body>
+</html>
